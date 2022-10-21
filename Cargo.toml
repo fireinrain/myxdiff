@@ -1,0 +1,21 @@
+[package]
+name = "myxdiff"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.66"
+clap = { version = "4.0.18", features = ["derive"] }
+console = "0.15.2"
+reqwest = { version = "0.11.12", default-features = false, features = ["rustls"] }
+serde_yaml = "0.9.13"
+similar = "2.2.0"
+tokio = { version = "1.21.2", features = ["full"] }
+
+
+[[example]]
+name = "similar_snippet"
+[[example]]
+name = "similar_snippet2"
